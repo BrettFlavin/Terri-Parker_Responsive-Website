@@ -61,21 +61,27 @@ Here are some example screenshots of the application running on various differen
 
 <p>Google Pixel 2 XL</p>
 <img src="screenshots/Pixel2XL_screenshot1.png" alt="Pixel 2 XL screenshot" width="200"/>
+<br>
 
 <p>Google Pixel 2 XL</p>
 <img src="screenshots/Pixel2XL_screenshot2.png" alt="Pixel 2 XL screenshot" width="200"/>
+<br>
 
 <p>Galaxy S9</p>
-<img src="screenshots/GalaxyS9_screenshot2.png" alt="Galaxy S9 screenshot" width="200"/>
+<img src="screenshots/GalaxyS9_screenshot.png" alt="Galaxy S9 screenshot" width="200"/>
+<br>
 
 <p>iOS 11 Plus</p>
 <img src="screenshots/iOS11Plus_screenshot.png" alt="iOS 11 Plus screenshot" width="200"/>
+<br>
 
 <p>iPad Mini</p>
 <img src="screenshots/iPadMini_screenshot.png" alt="iPad Mini screenshot" width="200"/>
+<br>
 
 <p>iPad Pro</p>
 <img src="screenshots/iPadPro_screenshot.png" alt="iPad Pro screenshot" width="200"/>
+<br>
 
 <!-- ROADMAP -->
 
