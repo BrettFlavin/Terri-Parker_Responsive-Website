@@ -148,16 +148,11 @@ header {
   transition: font-size 0.5s;
 }
 
-/* transition: <property> <duration> <timing-function> <delay> */
-
 .nav-link:focus, .nav-link:hover {
   color: var(--white-color);
   font-size: 2.5rem;
   border-bottom: 2px solid var(--white-color);
 }
-
-.nav-link:cli
-/* fade in effect for the nav links when the menu is opened */
 
 .nav-list .nav-item:nth-child(1) {
   transition: opacity 0.5s ease 0.15s;
@@ -220,11 +215,6 @@ header {
   text-align: center;
 }
 
-.first-letter {
-  text-transform: uppercase;
-  font-size: 15rem;
-}
-
 /* Terri Parker */
 
 .headline {
@@ -234,6 +224,13 @@ header {
   font-weight: 500;
   line-height: 0.9;
   text-shadow: 2px 2px 5px black, 0 0 15px purple, 0 0 20px pink;
+}
+
+/* make first letters of headline larger */
+
+.first-letter {
+  text-transform: uppercase;
+  font-size: 15rem;
 }
 
 /* Explore and Be Inspired */
@@ -251,7 +248,7 @@ header {
   margin-right: -3px;
 }
 
-/* contains fa-heart icon and 2 lines */
+/* SEPERATOR - fa-heart icon and 2 lines */
 
 .seperator {
   display: flex;
@@ -389,6 +386,7 @@ header {
 /* Contact Me section  */
 
 /* Footer section */
+
 .social-media {
   padding: 3rem 0;
   text-align: center;
@@ -421,6 +419,7 @@ header {
   transform: translateX(-50%);
   border-radius: 50%;
 }
+
 .back-to-top i {
   display: block;
   color: var(--purple-color);
