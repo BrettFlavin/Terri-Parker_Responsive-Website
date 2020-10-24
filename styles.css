@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Great+Vibes&family=Open+Sans:wght@300&display=swap");
 /* Global Reset */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -148,34 +150,35 @@ header {
   transition: font-size 0.5s;
 }
 
-.nav-link:focus, .nav-link:hover {
+.nav-link:focus,
+.nav-link:hover {
   color: var(--white-color);
   font-size: 2.5rem;
   border-bottom: 2px solid var(--white-color);
 }
 
 .nav-list .nav-item:nth-child(1) {
-  transition: opacity 0.5s ease 0.15s;
+  transition: opacity 0.5s ease 0.2s;
 }
 
 .nav-list .nav-item:nth-child(2) {
-  transition: opacity 0.5s ease 0.3s;
+  transition: opacity 0.5s ease 0.4s;
 }
 
 .nav-list .nav-item:nth-child(3) {
-  transition: opacity 0.5s ease 0.45s;
-}
-
-.nav-list .nav-item:nth-child(4) {
   transition: opacity 0.5s ease 0.6s;
 }
 
+.nav-list .nav-item:nth-child(4) {
+  transition: opacity 0.5s ease 0.8s;
+}
+
 .nav-list .nav-item:nth-child(5) {
-  transition: opacity 0.5s ease 0.75s;
+  transition: opacity 0.5s ease 1s;
 }
 
 .nav-list .nav-item:nth-child(6) {
-  transition: opacity 0.5s ease 0.9s;
+  transition: opacity 0.5s ease 1.2s;
 }
 
 /* JavaScript code adds an event listener to toggle .open class on/off when 'click' event fires */
@@ -237,7 +240,7 @@ header {
 
 .sub-headline h5 {
   color: var(--white-color);
-  text-shadow: .5px .5px 5px black;
+  text-shadow: 0.5px 0.5px 5px black;
   font-size: 2rem;
   font-weight: 500;
   font-family: var(--body-font);
@@ -308,7 +311,8 @@ header {
   opacity: 0.7;
 }
 
-.more-btn:hover, .more-btn:focus {
+.more-btn:hover,
+.more-btn:focus {
   color: var(--white-color);
   background-color: var(--purple-color);
   border-color: var(--purple-color);
@@ -322,14 +326,14 @@ header {
   color: var(--purple-color);
   font-weight: 500;
   text-align: center;
-  text-shadow: .5px .5px 5px black;
+  text-shadow: 0.5px 0.5px 5px black;
 }
 
 /* pink sub-headline */
 
 .global-headline .sub-headline-pink {
   color: #e6739f;
-  text-shadow: .5px .5px 5px black;
+  text-shadow: 0.5px 0.5px 5px black;
   font-size: 2rem;
   font-weight: 500;
   font-family: var(--body-font);
@@ -376,7 +380,7 @@ header {
 
 .gallery-grid img:hover {
   border: 2px solid #000;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 /* Tutorials section */
@@ -391,7 +395,7 @@ header {
   padding: 3rem 0;
   text-align: center;
   position: relative;
-  background-color: rgb(241, 184, 231, 1);
+  background: url("images/glitterBG.png") no-repeat;
 }
 
 .social-media h4 {
@@ -399,7 +403,8 @@ header {
   color: var(--purple-color);
   font-size: 4rem;
   font-weight: 500;
-  text-shadow: 1px 1px 2px var(--pink-color), 1px 1px 2px var(--purple-color), 1px 1px 2px var(--pink-color);
+  text-shadow: 1px 1px 2px var(--pink-color), 1px 1px 2px var(--purple-color),
+    1px 1px 2px var(--pink-color);
 }
 
 .social-media-icons li {
@@ -409,15 +414,23 @@ header {
   font-size: 3rem;
 }
 
+.social-media-icons i:hover {
+  color: #e6739f;
+}
+
 .back-to-top {
   width: 5rem;
   height: 5rem;
-  background-color: rgb(241, 184, 231, .5);
+  background-color: rgb(197, 213, 224, 0.4);
   position: absolute;
   top: -2em;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
+}
+
+.fa-chevron-up:hover {
+  color: #e6739f;
 }
 
 .back-to-top i {
