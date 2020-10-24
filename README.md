@@ -59,17 +59,17 @@ This application was created w/ Visual Studio Code using HTML, CSS, and JavaScri
 
 Here are some example screenshots of the application running on various different device:
 
-![Pixel 2 XL](screenshots/Pixel2XL_screenshot1.png)
+<img src="screenshots/Pixel2XL_screenshot1.png" alt="Pixel 2 XL screenshot" width="200"/>
 
-![Pixel 2 XL](screenshots/Pixel2XL_screenshot2.png)
+<img src="screenshots/Pixel2XL_screenshot2.png" alt="Pixel 2 XL screenshot" width="200"/>
 
-![Galaxy S9](screenshots/GalaxyS9_screenshot.png)
+<img src="screenshots/GalaxyS9_screenshot2.png" alt="Galaxy S9 screenshot" width="200"/>
 
-![iOS 11 Plus](screenshots/iOS11Plus_screenshot.png)
+<img src="screenshots/iOS11Plus_screenshot.png" alt="iOS 11 Plus screenshot" width="200"/>
 
-![iPad mini](screenshots/iPadMini_screenshot.png)
+<img src="screenshots/iPadMini_screenshot.png" alt="iPad Mini screenshot" width="200"/>
 
-![iPad Pro](screenshots/iPadPro_screenshot.png)
+<img src="screenshots/iPadPro_screenshot.png" alt="iPad Pro screenshot" width="200"/>
 
 <!-- ROADMAP -->
 
