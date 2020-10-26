@@ -4,7 +4,7 @@ const selectElement = (element) => {
 };
 let menuToggler = selectElement('.menu-toggle');
 let body = selectElement('body');
-const links = document.querySelectorAll('.nav-list .nav-item');
+let links = document.querySelectorAll('.nav-list .nav-item');
 
 menuToggler.addEventListener('click', () => {
     body.classList.toggle('open');

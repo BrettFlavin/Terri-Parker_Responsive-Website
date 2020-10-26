@@ -28,6 +28,7 @@ html {
 
 section {
   padding: 3.9rem 0;
+  overflow: hidden;
 }
 
 img {
@@ -76,11 +77,10 @@ header {
 
 .menu-toggle {
   color: #e6739f;
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 2.5rem;
+  font-size: 2.5rem;
+  position: fixed;
+  top: 20px;
+  right: 40px;
   cursor: pointer;
   z-index: 1500;
 }
@@ -90,11 +90,13 @@ header {
 .fa-bars {
   display: block;
   text-shadow: 1px 1px 2px black;
+  position: fixed;
 }
 
 .fa-times {
   display: none;
   text-shadow: 1px 1px 2px black;
+  position: fixed;
 }
 
 /* darkened overlay for when the menu is displayed */
@@ -140,7 +142,7 @@ header {
 .nav-link {
   display: block;
   color: var(--purple-color);
-  border-bottom: 2px solid var(--purple-color);
+  text-decoration: underline;
   text-transform: uppercase;
   font-family: var(--body-font);
   font-size: 2rem;
@@ -153,8 +155,7 @@ header {
 .nav-link:focus,
 .nav-link:hover {
   color: var(--white-color);
-  font-size: 2.5rem;
-  border-bottom: 2px solid var(--white-color);
+  font-size: 2.6rem;
 }
 
 .nav-list .nav-item:nth-child(1) {
@@ -214,6 +215,7 @@ header {
   background: url("images/hero2.jpg") center no-repeat;
   background-size: cover;
   display: flex;
+  flex: 1;
   align-items: center;
   text-align: center;
 }
@@ -225,7 +227,6 @@ header {
   font-family: var(--headline-font);
   color: var(--purple-color);
   font-weight: 500;
-  line-height: 0.9;
   text-shadow: 2px 2px 5px black, 0 0 15px purple, 0 0 20px pink;
 }
 
@@ -395,7 +396,7 @@ header {
   padding: 3rem 0;
   text-align: center;
   position: relative;
-  background: url("images/glitterBG.png") no-repeat;
+  background: url("images/glitterBG.png");
 }
 
 .social-media h4 {
@@ -414,8 +415,12 @@ header {
   font-size: 3rem;
 }
 
+.social-media-icons i {
+  color: #fff;
+}
+
 .social-media-icons i:hover {
-  color: #e6739f;
+  color: var(--pink-color);
 }
 
 .back-to-top {
@@ -439,3 +444,99 @@ header {
   font-size: 2rem;
   padding-top: 5%;
 }
+
+/* media queries */
+@media screen and (min-width: 900px) {
+  header {
+    background-color: #e8b2bf;
+    position: sticky;
+  }
+
+  section {
+    padding: 7.9rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-list {
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    padding: 0;
+    justify-content: initial;
+    transform: initial;
+    transition: initial;
+    flex-direction: row;
+  }
+
+  .nav-item {
+    opacity: 1;
+    margin: 0 2.4rem;
+    border: none;
+    pointer-events: all;
+  }
+
+  .nav-link {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .active {
+    position: relative;
+  }
+
+  .active::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--purple-color);
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+  }
+
+  .headline {
+    font-size: 14rem;
+  }
+
+  .sub-headline h5 {
+    font-size: 3rem;
+  }
+
+  .global-headline .sub-headline-pink {
+    font-size: 3rem;
+  }
+
+  .first-letter {
+    font-size: 18rem;
+  }
+
+  .line {
+    max-width: 15rem;
+    height: 0.5rem;
+  }
+
+  .social-media {
+    max-width: 75%vw;
+    margin: auto;
+  }
+
+  .social-media h4 {
+    font-size: 7rem;
+  }
+
+  .social-media-icons li {
+    font-size: 5rem;
+    margin: 0 4rem;
+  }
+}
+/* END media queries */
