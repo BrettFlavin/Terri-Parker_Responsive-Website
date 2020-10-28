@@ -70,7 +70,7 @@ header {
   height: 7.2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .menu-toggle {
@@ -179,7 +179,7 @@ header {
   transition: opacity 0.5s ease 1.2s;
 }
 
-/* JavaScript code adds an event listener to toggle .open class on/off when 'click' event fires */
+/* "open" class toggled on/off by JS event listener */
 
 .open .fa-times {
   display: block;
@@ -197,7 +197,6 @@ header {
 .open .nav-list {
   transform: translateX(0);
   pointer-events: all;
-  /* scroll-behavior: none; */
 }
 
 .open .nav-item {
@@ -212,12 +211,11 @@ header {
   background: url("images/hero2.jpg") center no-repeat;
   background-size: cover;
   display: flex;
-  flex: 1;
   align-items: center;
   text-align: center;
 }
 
-/* Terri Parker */
+/* "Terri Parker" */
 
 .headline {
   font-size: 12rem;
@@ -227,14 +225,14 @@ header {
   text-shadow: 2px 2px 5px black, 0 0 15px purple, 0 0 20px pink;
 }
 
-/* make first letters of headline larger */
+/* class to make first letter large */
 
 .first-letter {
   text-transform: uppercase;
   font-size: 15rem;
 }
 
-/* Explore and Be Inspired */
+/* "Explore and Be Inspired" */
 
 .sub-headline h5 {
   color: var(--white-color);
@@ -293,7 +291,7 @@ header {
   margin-right: -2px;
 }
 
-/* SEE MORE */
+/* "See More" BUTTON */
 
 .more-btn {
   color: var(--purple-color);
@@ -315,7 +313,7 @@ header {
   border-color: var(--purple-color);
 }
 
-/* purple headline */
+/* purple main headline */
 
 .global-headline .sub-headline {
   font-size: 6rem;
@@ -371,16 +369,17 @@ header {
 
 .gallery-grid img {
   width: 100%;
-  padding: 10px 10px 20px 10px;
+  padding: 10px 10px 30px 10px;
   background-color: #fff;
   border: 2px solid #bfbfbf;
   box-shadow: 10px 10px 5px #aaaaaa;
-  transition: opacity 0.25s ease;
+  transition: all 0.3s ease;
 }
 
 .gallery-grid img:hover {
-  border: 2px solid #000;
-  opacity: 0.5;
+  border: 3px solid var(--purple-color);
+  opacity: 0.7;
+  transform: scale(105%);
 }
 
 .rotate-right {
@@ -402,7 +401,9 @@ header {
 .social-media {
   padding: 3rem 0;
   text-align: center;
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
   background: url("images/glitterBG.png");
 }
 
@@ -464,10 +465,6 @@ header {
   .menu-toggle {
     display: none;
   }
-  .nav {
-    justify-content: space-around;
-    align-items: center;
-  }
   .nav-list {
     position: initial;
     width: initial;
@@ -487,8 +484,8 @@ header {
   }
   .nav-link {
     font-size: 2.5rem;
-    font-weight: 900;
     text-decoration: none;
+    letter-spacing: 0px;
   }
   .active {
     position: relative;
@@ -508,6 +505,9 @@ header {
   .sub-headline h5 {
     font-size: 3rem;
   }
+  .global-headline .sub-headline {
+    font-size: 8rem;
+  }
   .global-headline .sub-headline-pink {
     font-size: 3rem;
   }
@@ -517,10 +517,6 @@ header {
   .line {
     max-width: 15rem;
     height: 0.5rem;
-  }
-  .social-media {
-    max-width: 75%vw;
-    margin: auto;
   }
   .social-media h4 {
     font-size: 7rem;
