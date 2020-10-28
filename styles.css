@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Great+Vibes&family=Open+Sans:wght@300&display=swap");
 /* Global Reset */
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -152,8 +150,7 @@ header {
   transition: font-size 0.5s;
 }
 
-.nav-link:focus,
-.nav-link:hover {
+.nav-link:focus, .nav-link:hover {
   color: var(--white-color);
   font-size: 2.6rem;
 }
@@ -312,8 +309,7 @@ header {
   opacity: 0.7;
 }
 
-.more-btn:hover,
-.more-btn:focus {
+.more-btn:hover, .more-btn:focus {
   color: var(--white-color);
   background-color: var(--purple-color);
   border-color: var(--purple-color);
@@ -375,13 +371,24 @@ header {
 
 .gallery-grid img {
   width: 100%;
-  border: 2px solid #ccc;
+  padding: 10px 10px 20px 10px;
+  background-color: #fff;
+  border: 2px solid #bfbfbf;
+  box-shadow: 10px 10px 5px #aaaaaa;
   transition: opacity 0.25s ease;
 }
 
 .gallery-grid img:hover {
   border: 2px solid #000;
   opacity: 0.5;
+}
+
+.rotate-right {
+  transform: rotate(10deg);
+}
+
+.rotate-left {
+  transform: rotate(-12deg);
 }
 
 /* Tutorials section */
@@ -404,8 +411,7 @@ header {
   color: var(--purple-color);
   font-size: 4rem;
   font-weight: 500;
-  text-shadow: 1px 1px 2px var(--pink-color), 1px 1px 2px var(--purple-color),
-    1px 1px 2px var(--pink-color);
+  text-shadow: 1px 1px 2px var(--pink-color), 1px 1px 2px var(--purple-color), 1px 1px 2px var(--pink-color);
 }
 
 .social-media-icons li {
@@ -446,25 +452,22 @@ header {
 }
 
 /* media queries */
+
 @media screen and (min-width: 900px) {
   header {
     background-color: #e8b2bf;
     position: sticky;
   }
-
   section {
     padding: 7.9rem;
   }
-
   .menu-toggle {
     display: none;
   }
-
   .nav {
     justify-content: space-around;
     align-items: center;
   }
-
   .nav-list {
     position: initial;
     width: initial;
@@ -476,24 +479,20 @@ header {
     transition: initial;
     flex-direction: row;
   }
-
   .nav-item {
     opacity: 1;
     margin: 0 2.4rem;
     border: none;
     pointer-events: all;
   }
-
   .nav-link {
     font-size: 2.5rem;
     font-weight: 900;
     text-decoration: none;
   }
-
   .active {
     position: relative;
   }
-
   .active::before {
     content: " ";
     position: absolute;
@@ -503,40 +502,33 @@ header {
     left: 0;
     bottom: -3px;
   }
-
   .headline {
     font-size: 14rem;
   }
-
   .sub-headline h5 {
     font-size: 3rem;
   }
-
   .global-headline .sub-headline-pink {
     font-size: 3rem;
   }
-
   .first-letter {
     font-size: 18rem;
   }
-
   .line {
     max-width: 15rem;
     height: 0.5rem;
   }
-
   .social-media {
     max-width: 75%vw;
     margin: auto;
   }
-
   .social-media h4 {
     font-size: 7rem;
   }
-
   .social-media-icons li {
     font-size: 5rem;
     margin: 0 4rem;
   }
 }
+
 /* END media queries */
