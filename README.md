@@ -46,10 +46,11 @@
 ## About The Project
 
 <!-- BUILT WITH -->
+<p> </p>
 
 ## Built With
 
-This application was created w/ Visual Studio Code using HTML, CSS, and JavaScript.
+Created in Visual Studio Code using HTML, CSS, and JavaScript.
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -120,9 +121,8 @@ Project Link: [https://github.com/BrettFlavin/Terri-Parker_Responsive-Website](h
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
-
-- [othneildrew - readme template](https://github.com/othneildrew/Best-README-Template)
-- [Landing Page/Images](https://www.pexels.com/)
+- [Landing Page + Images](https://www.pexels.com/)
+- [ScrollReveal JS library](https://scrollrevealjs.org/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
