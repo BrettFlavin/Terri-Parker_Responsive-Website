@@ -60,28 +60,12 @@ Created in Visual Studio Code using HTML, CSS, and JavaScript.
 
 Here are some example screenshots of the application running on various different devices:
 
+<p>Desktop Example</p>
+<img src="screenshots/desktop_example.gif" alt="responsive desktop example" width="750"/>
+<br>
+
 <p>Google Pixel 2 XL</p>
 <img src="screenshots/terriwebsite.gif" alt="Pixel 2 XL screenshot" width="350"/>
-<br>
-
-<p>Google Pixel 2 XL</p>
-<img src="screenshots/Pixel2XL_screenshot2.png" alt="Pixel 2 XL screenshot" width="350"/>
-<br>
-
-<p>Galaxy S9</p>
-<img src="screenshots/GalaxyS9_screenshot.png" alt="Galaxy S9 screenshot" width="350"/>
-<br>
-
-<p>iOS 11 Plus</p>
-<img src="screenshots/iOS11Plus_screenshot.png" alt="iOS 11 Plus screenshot" width="350"/>
-<br>
-
-<p>iPad Mini</p>
-<img src="screenshots/iPadMini_screenshot.png" alt="iPad Mini screenshot" width="350"/>
-<br>
-
-<p>iPad Pro</p>
-<img src="screenshots/iPadPro_screenshot.png" alt="iPad Pro screenshot" width="350"/>
 <br>
 
 <!-- ROADMAP -->
