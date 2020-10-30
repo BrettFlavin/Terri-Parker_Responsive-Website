@@ -24,14 +24,22 @@ html {
   scroll-behavior: smooth;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 section {
   padding: 3.9rem 0;
   overflow: hidden;
 }
 
 img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -67,7 +75,7 @@ header {
 }
 
 .nav {
-  height: 7.2rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -144,15 +152,13 @@ header {
   text-transform: uppercase;
   font-family: var(--body-font);
   font-size: 2rem;
-  letter-spacing: 2px;
-  margin-right: -2px;
-  transition: color 0.5s;
-  transition: font-size 0.5s;
+  letter-spacing: 4px;
+  margin-right: -4px;
+  transition: all 0.5s;
 }
 
 .nav-link:focus, .nav-link:hover {
   color: var(--white-color);
-  font-size: 2.6rem;
 }
 
 .nav-list .nav-item:nth-child(1) {
@@ -173,10 +179,6 @@ header {
 
 .nav-list .nav-item:nth-child(5) {
   transition: opacity 0.5s ease 1s;
-}
-
-.nav-list .nav-item:nth-child(6) {
-  transition: opacity 0.5s ease 1.2s;
 }
 
 /* "open" class toggled on/off by JS event listener */
@@ -222,7 +224,9 @@ header {
   font-family: var(--headline-font);
   color: var(--purple-color);
   font-weight: 500;
-  text-shadow: 2px 2px 5px black, 0 0 15px purple, 0 0 20px pink;
+  text-shadow: 2px 2px 5px white, 8px 8px 15px purple, 10px 10px 20px pink;
+  opacity: 0;
+  animation: scale 1.25s forwards;
 }
 
 /* class to make first letter large */
@@ -236,7 +240,7 @@ header {
 
 .sub-headline h5 {
   color: var(--white-color);
-  text-shadow: 0.5px 0.5px 5px black;
+  text-shadow: 1px 1px 2px black, 8px 8px 15px purple, 10px 10px 20px pink;
   font-size: 2rem;
   font-weight: 500;
   font-family: var(--body-font);
@@ -245,6 +249,9 @@ header {
   letter-spacing: 3px;
   word-spacing: 0.5rem;
   margin-right: -3px;
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+  animation-delay: .8s;
 }
 
 /* SEPERATOR - fa-heart icon and 2 lines */
@@ -261,6 +268,15 @@ header {
   height: 0.25rem;
   background-color: var(--white-color);
   position: relative;
+  opacity: 0;
+}
+
+.line-right {
+  animation: fadeRight 1.25s forwards;
+}
+
+.line-left {
+  animation: fadeLeft 1.2s forwards;
 }
 
 .fa-heart {
@@ -268,6 +284,13 @@ header {
   font-size: 4rem;
   color: #e6739f;
   text-shadow: 1px 1px 5px black;
+  opacity: 1;
+}
+
+.fade-in-heart {
+  opacity: 0;
+  animation: scale 1s forwards;
+  animation-delay: .4s;
 }
 
 .page-separator-line-left {
@@ -369,6 +392,7 @@ header {
 
 .gallery-grid img {
   width: 100%;
+  max-width: 300px;
   padding: 10px 10px 30px 10px;
   background-color: #fff;
   border: 2px solid #bfbfbf;
@@ -394,8 +418,6 @@ header {
 
 /* Shop Now section  */
 
-/* Contact Me section  */
-
 /* Footer section */
 
 .social-media {
@@ -404,7 +426,8 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  background: url("images/glitterBG.png");
+  background: url("images/glitterBG.png")center no-repeat;
+  background-size: cover;
 }
 
 .social-media h4 {
@@ -435,24 +458,28 @@ header {
   height: 5rem;
   background-color: rgb(197, 213, 224, 0.4);
   position: absolute;
-  top: -2em;
+  top: -2rem;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
-}
-
-.fa-chevron-up:hover {
-  color: #e6739f;
 }
 
 .back-to-top i {
   display: block;
   color: var(--purple-color);
   font-size: 2rem;
-  padding-top: 5%;
+  padding-top: 5%;  
+  animation: upArrow 1s infinite;
 }
 
-/* media queries */
+.back-to-top i:hover {
+  color: #e6739f;
+}
+
+
+/* Media Queries */
+
+/* Responsive layout for screens larger than 900px */
 
 @media screen and (min-width: 900px) {
   header {
@@ -465,16 +492,20 @@ header {
   .menu-toggle {
     display: none;
   }
+  .nav {
+    justify-content: space-between;
+  }
   .nav-list {
+    flex-direction: row;
+    margin-left: -25px;
+    padding: 0;
     position: initial;
     width: initial;
     height: initial;
     background-color: transparent;
-    padding: 0;
     justify-content: initial;
     transform: initial;
     transition: initial;
-    flex-direction: row;
   }
   .nav-item {
     opacity: 1;
@@ -485,7 +516,6 @@ header {
   .nav-link {
     font-size: 2.5rem;
     text-decoration: none;
-    letter-spacing: 0px;
   }
   .active {
     position: relative;
@@ -527,4 +557,57 @@ header {
   }
 }
 
-/* END media queries */
+/* Animations */
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes upArrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-.5rem);
+  }
+}
