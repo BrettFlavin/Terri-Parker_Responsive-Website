@@ -61,7 +61,7 @@ Created in Visual Studio Code using HTML, CSS, and JavaScript.
 Here are some example screenshots of the application running on various different devices:
 
 <p>Google Pixel 2 XL</p>
-<img src="screenshots/Pixel2XL_screenshot1.png" alt="Pixel 2 XL screenshot" width="350"/>
+<img src="screenshots/terriwebsite.gif" alt="Pixel 2 XL screenshot" width="350"/>
 <br>
 
 <p>Google Pixel 2 XL</p>
