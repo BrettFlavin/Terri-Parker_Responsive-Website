@@ -1,9 +1,3 @@
-<!--
-*** Markdown "reference style" links used for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( )
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
 <!-- PROJECT SHIELDS -->
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -12,21 +6,13 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/BrettFlavin/Terri-Parker_Responsive-Website">
-    <img src="#" alt="Logo" width="180" height="180">
-  </a>
-
-  <h3 align="center">README</h3>
-
+<!-- PROJECT HEADLINE/LOGO -->
+  <h1 align="center">Responsive Website example</h1>
   <p align="center">    
     <a href="https://github.com/BrettFlavin/Terri-Parker_Responsive-Website/issues">Report Bug</a>
     ·
     <a href="https://github.com/BrettFlavin/Terri-Parker_Responsive-Website/issues">Request Feature</a>
   </p>
-</p>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -44,9 +30,9 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+I created this responsive portfolio website as an example for a friend using HTML, CSS, and Javascript. Things to note being used here are CSS animations, the Scroll-Reveal javascript library for the animations on scroll, and the custom contact form made by using Formspree's API. I also began to make this website responsive for both mobile and larger devices by using CSS media queries and a little Javascript, but the main purpose of this project was simply to refresh my knowledge of the power of HTML, CSS, and Javascript! 
 
 <!-- BUILT WITH -->
-<p> </p>
 
 ## Built With
 
@@ -58,13 +44,13 @@ Created in Visual Studio Code using HTML, CSS, and JavaScript.
 
 ## Usage
 
-Here are some example screenshots of the application running on various different devices:
+<h4>Here are some example screenshots of the application running on various different devices:</h4>
 
-<p>Desktop Example</p>
+<h5>Desktop Example</h5>
 <img src="screenshots/desktop_example.gif" alt="responsive desktop example" width="750"/>
 <br>
 
-<p>Google Pixel 2 XL</p>
+<h5>Google Pixel 2 XL</h5>
 <img src="screenshots/terriwebsite.gif" alt="Pixel 2 XL screenshot" width="350"/>
 <br>
 
@@ -105,8 +91,10 @@ Project Link: [https://github.com/BrettFlavin/Terri-Parker_Responsive-Website](h
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
-- [Landing Page + Images](https://www.pexels.com/)
-- [ScrollReveal JS library](https://scrollrevealjs.org/)
+- [Pexels](https://www.pexels.com/)
+- [Scroll-Reveal](https://scrollrevealjs.org/)
+- [Font-Awesome](https://fontawesome.com/)
+- [Formspree](https://formspree.io/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
